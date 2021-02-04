@@ -7,7 +7,7 @@ const DEFAULT_HEIGHT = 720
 
 const config: Phaser.Types.Core.GameConfig = {
   type: Phaser.AUTO,
-  backgroundColor: '#ffffff',
+  backgroundColor: '#dcdcdc',
   scale: {
     parent: 'phaser-game',
     mode: Phaser.Scale.FIT,
@@ -23,8 +23,8 @@ const config: Phaser.Types.Core.GameConfig = {
       gravity: { y: 400 }
     }
   }
-}
+};
 
 window.addEventListener('load', () => {
   const game = new Phaser.Game(config)
-})
+});

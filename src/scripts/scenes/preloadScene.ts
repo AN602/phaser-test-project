@@ -5,6 +5,12 @@ export default class PreloadScene extends Phaser.Scene {
 
   preload() {
     this.load.image('phaser-logo', 'assets/img/phaser-logo.png')
+
+    this.load.image('mountains-back', 'assets/img/mountains-back.png');
+    this.load.image('mountains-mid1', 'assets/img/mountains-mid1.png');
+    this.load.image('mountains-mid2', 'assets/img/mountains-mid2.png');
+
+    this.load.spritesheet('rainSplash', 'assets/rain-splash-sprite.png', { frameWidth: 10, frameHeight: 10 });
   }
 
   create() {
