@@ -17,12 +17,16 @@ const config: Phaser.Types.Core.GameConfig = {
   },
   scene: [PreloadScene, MainScene],
   physics: {
-    default: 'arcade',
-    arcade: {
-      debug: false,
-      gravity: { y: 400 }
+    default: 'matter',
+    matter: {
+      debug: true,
+      gravity: {
+        x: 0,
+        y: 5
+      },
+      enableSleeping: true
     }
-  }
+  },
 };
 
 window.addEventListener('load', () => {
