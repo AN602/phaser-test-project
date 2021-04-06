@@ -11,6 +11,10 @@ export default class PreloadScene extends Phaser.Scene {
     this.load.image('ground', 'assets/ground.png');
 
     this.load.spritesheet('rainSplash', 'assets/rain-splash-sprite.png', { frameWidth: 10, frameHeight: 10 });
+
+    this.load.image('m1', 'assets/weapons/m1.png');
+
+    this.load.image('smoke', 'assets/smoke-particle.png');
   }
 
   create() {
